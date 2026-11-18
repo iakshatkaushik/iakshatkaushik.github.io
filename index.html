@@ -3,102 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Akshat · Interpretable ML for medicine and language</title>
+<title>Akshat · Interpretable machine learning</title>
 <meta name="description" content="Akshat is a Computer Science undergraduate at Thapar Institute working on interpretable machine learning for medicine and language.">
-<meta property="og:title" content="Akshat">
-<meta property="og:description" content="Interpretable machine learning for medicine and language.">
-<meta name="color-scheme" content="dark light">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c2410c'/%3E%3Ccircle cx='20' cy='30' r='8' fill='%23fde68a'/%3E%3Ccircle cx='36' cy='33' r='5' fill='%237c2d12'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0a'/%3E%3Cpath d='M14 52 28 12h8l14 40h-9l-3-9H26l-3 9z M28 35h8l-4-13z' fill='%23d6ff3f' fill-rule='evenodd'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="nav" id="nav">
-  <a class="mark" href="#top">Akshat</a>
-  <nav aria-label="Sections">
-    <a href="#now">Now</a>
+<header class="top" id="topbar">
+  <a class="brand" href="#top">Akshat</a>
+  <nav>
     <a href="#research">Research</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
+  <span class="clock"><i></i>Patiala <b id="clock">--:--</b> IST</span>
 </header>
 
-<main>
-<section class="hero" id="top">
-  <canvas id="eye" aria-hidden="true"></canvas>
-  <div class="anno" id="anno" aria-hidden="true">
-    <span class="tag" data-k="disc"><i></i><b>Optic disc</b></span>
-    <span class="tag" data-k="fovea"><i></i><b>Fovea</b></span>
-    <span class="tag" data-k="vessel"><i></i><b>Vessels</b></span>
+<main id="top">
+<section class="hero">
+  <div class="name" id="name">
+    <h1>Akshat</h1>
+    <canvas id="gl" aria-hidden="true"></canvas>
   </div>
-  <div class="hero-text wrap">
-    <h1><span class="line"><span>Akshat</span></span></h1>
-    <p class="tagline"><span class="line"><span>Interpretable machine learning</span></span><span class="line dim"><span>for medicine and language.</span></span></p>
-    <p class="lede">I work on models that read retinal images, ECG and text, and on explaining what those models have learned.</p>
-    <p class="hint"><span class="mouse" aria-hidden="true"></span>Drag the eye. Scroll to read on.</p>
+  <div class="bands" aria-hidden="true">
+    <div class="mq" data-speed="70"><div></div></div>
+    <div class="mq out" data-speed="-52"><div></div></div>
   </div>
-  <svg class="ecg" id="ecg" viewBox="0 0 1600 80" preserveAspectRatio="none" aria-hidden="true"></svg>
-  <p class="credit">Fig. 1 &nbsp;Retinal fundus, left eye. Photo: M. Häggström, CC0.</p>
-</section>
-
-<section class="block wrap" id="now">
-  <h2 class="head"><span class="num">01</span><em>Now</em><span class="rule"><i></i></span></h2>
-  <div class="now-grid">
-    <p class="big reveal">Computer Science undergraduate at <span class="hl">Thapar Institute of Engineering &amp; Technology</span>, spending most of my time on research.</p>
+  <div class="sub">
+    <p class="tag"><b>Interpretable</b> machine learning for medicine and language.</p>
+    <p class="about">I am a Computer Science undergraduate at Thapar Institute of Engineering &amp; Technology. I work on models that read retinal images, ECG and text, and on explaining what those models have learned.</p>
     <ul class="roles">
-      <li class="reveal"><span class="pulse-dot"></span><div><strong>Research Intern (GenAI)</strong><span>Samsung R&amp;D Institute, India</span></div></li>
-      <li class="reveal"><span class="pulse-dot"></span><div><strong>Research Intern</strong><span>Thapar Institute of Engineering &amp; Technology</span></div></li>
+      <li><b>Research Intern (GenAI)</b><span>Samsung R&amp;D Institute, India</span></li>
+      <li><b>Research Intern</b><span>Thapar Institute of Engineering &amp; Technology</span></li>
     </ul>
   </div>
 </section>
 
-<section class="block wrap" id="research">
-  <h2 class="head"><span class="num">02</span><em>Research</em><span class="rule"><i></i></span></h2>
-  <picture class="fig reveal">
-    <source media="(prefers-color-scheme: light)" srcset="assets/fig/threads-light.svg">
-    <img src="assets/fig/threads-dark.svg" alt="Three research threads: CardioVision, shown as a blinking eye over a heartbeat; NLP and LLM evaluation, shown as a sentence being tagged; inverse reinforcement learning, shown as an agent walking a grid.">
-  </picture>
+<section id="research">
+  <h2 class="title"><span>Re</span><span class="o">search</span></h2>
   <div class="threads">
-    <article class="reveal"><h3>CardioVision</h3><p>Research Intern at Thapar Institute.</p></article>
-    <article class="reveal"><h3>NLP and LLM evaluation</h3><p>Biomedical named entity recognition and how it holds up as entities drift over time, across encoder and generative model families. In legal NLP, statistically tested comparisons of fine-tuned encoders against zero- and few-shot open-weight LLMs.</p></article>
-    <article class="reveal"><h3>Inverse reinforcement learning</h3><p>Recovering the reward functions that explain an agent's observed behaviour, so that learned policies become interpretable.</p></article>
+    <article class="thread rv">
+      <i>01</i>
+      <h3>CardioVision</h3>
+      <p>Research Intern at Thapar Institute. Retinal fundus imaging and ECG.</p>
+      <svg class="thumb" viewBox="0 0 160 110" role="img" aria-label="An eye above a heartbeat trace">
+        <path class="ln" d="M30 46 Q80 8 130 46 Q80 84 30 46Z"/>
+        <circle class="iris" cx="80" cy="46" r="17"/><circle class="pupil" cx="80" cy="46" r="7"/>
+        <path class="faint" d="M8 94 H40 l4 -4 4 4 h8 l3 5 5 -30 5 34 4 -9 h18 l5 -6 5 6 h10 l3 5 5 -30 5 34 4 -9 h16"/>
+        <path class="trace" pathLength="100" d="M8 94 H40 l4 -4 4 4 h8 l3 5 5 -30 5 34 4 -9 h18 l5 -6 5 6 h10 l3 5 5 -30 5 34 4 -9 h16"/>
+      </svg>
+    </article>
+    <article class="thread rv">
+      <i>02</i>
+      <h3>NLP and LLM evaluation</h3>
+      <p>Biomedical named entity recognition and how it holds up as entities drift over time, across encoder and generative model families. In legal NLP, statistically tested comparisons of fine-tuned encoders against zero- and few-shot open-weight LLMs.</p>
+      <svg class="thumb" viewBox="0 0 160 110" role="img" aria-label="A sentence split into tokens, two of them tagged">
+        <g class="tok"><rect x="10" y="20" width="26" height="16" rx="4"/><rect x="41" y="20" width="44" height="16" rx="4"/><rect x="90" y="20" width="24" height="16" rx="4"/><rect x="119" y="20" width="31" height="16" rx="4"/>
+        <rect x="10" y="52" width="46" height="16" rx="4"/><rect x="61" y="52" width="22" height="16" rx="4"/><rect x="88" y="52" width="34" height="16" rx="4"/><rect x="127" y="52" width="23" height="16" rx="4"/></g>
+        <rect class="scan" y="20" width="26" height="16" rx="4"/>
+        <path class="tagl t1" pathLength="100" d="M10 74 H56"/><path class="tagl t2" pathLength="100" d="M88 74 H150"/>
+        <rect class="lab t1" x="10" y="80" width="30" height="7" rx="2"/><rect class="lab t2" x="88" y="80" width="42" height="7" rx="2"/>
+      </svg>
+    </article>
+    <article class="thread rv">
+      <i>03</i>
+      <h3>Inverse reinforcement learning</h3>
+      <p>Recovering the reward functions that explain an agent's observed behaviour, so that learned policies become interpretable.</p>
+      <svg class="thumb" viewBox="0 0 160 110" role="img" aria-label="An agent crossing a grid while its reward is inferred">
+        <g class="grid"><path d="M20 15 H140 M20 35 H140 M20 55 H140 M20 75 H140 M20 95 H140 M20 15 V95 M44 15 V95 M68 15 V95 M92 15 V95 M116 15 V95 M140 15 V95"/></g>
+        <g class="heat"><rect x="20" y="75" width="24" height="20"/><rect x="44" y="75" width="24" height="20"/><rect x="44" y="55" width="24" height="20"/><rect x="68" y="55" width="24" height="20"/><rect x="92" y="55" width="24" height="20"/><rect x="92" y="35" width="24" height="20"/><rect x="116" y="35" width="24" height="20"/><rect x="116" y="15" width="24" height="20"/></g>
+        <path class="goal" d="M128 19 l2 4.4 4.8 .5 -3.6 3.2 1 4.7 -4.2 -2.4 -4.2 2.4 1 -4.7 -3.6 -3.2 4.8 -.5Z"/>
+        <circle class="agent" r="6"><animateMotion dur="7s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.7;1" calcMode="linear" path="M32 85 H56 V65 H104 V45 H128 V25"/></circle>
+      </svg>
+    </article>
   </div>
-  <picture class="fig reveal">
-    <source media="(prefers-color-scheme: light)" srcset="assets/fig/interests-light.svg">
-    <img src="assets/fig/interests-dark.svg" alt="Research interests: retinal fundus imaging, ECG and physiological signals, interpretability (SHAP, sparse autoencoders), biomedical and legal NLP, LLM evaluation and temporal robustness, LLM agents and inverse reinforcement learning.">
-  </picture>
 </section>
 
-<section class="block wrap" id="projects">
-  <h2 class="head"><span class="num">03</span><em>Projects</em><span class="rule"><i></i></span></h2>
-  <div class="cards" id="cards"></div>
+<section id="projects">
+  <h2 class="title"><span>Pro</span><span class="o">jects</span></h2>
+  <div class="cards">
+    <article class="card rv"><i>01</i><small><span>Security, LLM agent</span><span>Third place, Techkriti ’26, IIT Kanpur</span></small><h3>CyberSOC-Agent</h3><p>Insider threat detection and investigation. An ensemble of scenario rules, XGBoost with SHAP, Isolation Forest and an autoencoder scores risk; a ReAct LLM agent then investigates each alert and verifies every cited item against tool output.</p><ul><li>Python</li><li>XGBoost</li><li>SHAP</li><li>PyTorch</li><li>ChromaDB</li><li>FastAPI</li><li>React</li></ul></article>
+    <a class="card rv" href="https://github.com/Aayush-Bindal/SunoSakhi" rel="noopener"><i>02</i><small><span>Health, voice</span><span>First place, Society Hackathon</span></small><h3>SunoSakhi <em>↗</em></h3><p>A voice-based health assistant that lets people without a smartphone ask health questions by phone in 12 regional languages. Team project; I built the FastAPI voice pipeline.</p><ul><li>Python</li><li>FastAPI</li><li>Exotel</li><li>Google Cloud Speech</li><li>Mistral 7B</li></ul></a>
+    <article class="card rv"><i>03</i><small><span>Digital forensics</span><span>Team project</span></small><h3>Forensic</h3><p>Acquisition, recovery and analysis of DVR/NVR surveillance evidence across vendors, with LLM-guided discovery of proprietary formats and YOLO-based event indexing.</p><ul><li>Rust</li><li>Python</li><li>React</li><li>Tauri</li><li>YOLO</li></ul></article>
+    <a class="card rv" href="https://github.com/iakshatkaushik/few-shot-anomaly-views" rel="noopener"><i>04</i><small><span>Computer vision</span><span>Open source</span></small><h3>few-shot-anomaly-views <em>↗</em></h3><p>Few-shot visual anomaly detection, comparing augmented views as nearest-neighbour memory against contrastive training on frozen DINOv2/DINOv3 features.</p><ul><li>Python</li><li>DINOv2</li><li>DINOv3</li></ul></a>
+  </div>
 </section>
 
-<section class="block wrap" id="skills">
-  <h2 class="head"><span class="num">04</span><em>Skills</em><span class="rule"><i></i></span></h2>
-  <div class="skills" id="skillrows"></div>
+<section id="skills">
+  <h2 class="title"><span>Sk</span><span class="o">ills</span></h2>
+  <div class="skills">
+    <div class="sk rv"><h3>Languages</h3><p><span>Python</span><span>C</span><span>C++</span><span>JavaScript</span><span>Rust</span><span>SQL</span><span>Bash</span></p></div>
+    <div class="sk rv"><h3>ML and data</h3><p><span>PyTorch</span><span>scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>NumPy</span><span>pandas</span><span>OpenCV</span><span>Sentence Transformers</span><span>imbalanced-learn</span></p></div>
+    <div class="sk rv"><h3>Web and backend</h3><p><span>FastAPI</span><span>Flask</span><span>React</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>MySQL</span><span>SQLite</span><span>ChromaDB</span></p></div>
+    <div class="sk rv"><h3>Tools and infra</h3><p><span>Linux</span><span>Git</span><span>AWS EC2</span><span>Nginx</span><span>Google Cloud APIs</span><span>Gemini API</span><span>LaTeX</span></p></div>
+    <div class="sk rv"><h3>Methods</h3><p><span>Experimental design</span><span>Benchmark and ablation evaluation</span><span>Statistical hypothesis testing</span><span>Zero- and few-shot LLM evaluation</span><span>Model interpretability</span></p></div>
+  </div>
 </section>
 
-<section class="block wrap contact" id="contact">
-  <h2 class="head"><span class="num">05</span><em>Contact</em><span class="rule"><i></i></span></h2>
-  <p class="big reveal">The easiest way to reach me is LinkedIn.</p>
-  <div class="links reveal">
-    <a href="https://www.linkedin.com/in/iakshatkaushik" rel="noopener"><span>LinkedIn</span><i>↗</i></a>
-    <a href="https://orcid.org/0009-0009-9848-3883" rel="noopener"><span>ORCID</span><i>↗</i></a>
-    <a href="https://github.com/iakshatkaushik" rel="noopener"><span>GitHub</span><i>↗</i></a>
+<section id="contact">
+  <h2 class="title"><span>Con</span><span class="o">tact</span></h2>
+  <div class="links">
+    <a href="https://www.linkedin.com/in/iakshatkaushik" rel="noopener"><span>LinkedIn</span></a>
+    <a href="https://github.com/iakshatkaushik" rel="noopener"><span>GitHub</span></a>
+    <a href="https://orcid.org/0009-0009-9848-3883" rel="noopener"><span>ORCID</span></a>
   </div>
 </section>
 </main>
 
-<footer class="wrap">
-  <span>Akshat</span>
-  <span>Fundus photograph by Mikael Häggström, CC0. Icons from Devicon and Simple Icons.</span>
-</footer>
+<footer><span>Akshat</span><span>Patiala, India</span></footer>
 
-<script type="module" src="main.js"></script>
+<script src="lib/three.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
