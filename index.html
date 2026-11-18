@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akshat · Interpretable ML for medicine and language</title>
+<meta name="description" content="Akshat is a Computer Science undergraduate at Thapar Institute working on interpretable machine learning for medicine and language.">
+<meta property="og:title" content="Akshat">
+<meta property="og:description" content="Interpretable machine learning for medicine and language.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c2410c'/%3E%3Ccircle cx='20' cy='30' r='8' fill='%23fde68a'/%3E%3Ccircle cx='36' cy='33' r='5' fill='%237c2d12'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="mark" href="#top">Akshat</a>
+  <nav aria-label="Sections">
+    <a href="#now">Now</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <canvas id="eye" aria-hidden="true"></canvas>
+  <div class="anno" id="anno" aria-hidden="true">
+    <span class="tag" data-k="disc"><i></i><b>Optic disc</b></span>
+    <span class="tag" data-k="fovea"><i></i><b>Fovea</b></span>
+    <span class="tag" data-k="vessel"><i></i><b>Vessels</b></span>
+  </div>
+  <div class="hero-text wrap">
+    <h1><span class="line"><span>Akshat</span></span></h1>
+    <p class="tagline"><span class="line"><span>Interpretable machine learning</span></span><span class="line dim"><span>for medicine and language.</span></span></p>
+    <p class="lede">I work on models that read retinal images, ECG and text, and on explaining what those models have learned.</p>
+    <p class="hint"><span class="mouse" aria-hidden="true"></span>Drag the eye. Scroll to read on.</p>
+  </div>
+  <svg class="ecg" id="ecg" viewBox="0 0 1600 80" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <p class="credit">Fig. 1 &nbsp;Retinal fundus, left eye. Photo: M. Häggström, CC0.</p>
+</section>
+
+<section class="block wrap" id="now">
+  <h2 class="head"><span class="num">01</span><em>Now</em><span class="rule"><i></i></span></h2>
+  <div class="now-grid">
+    <p class="big reveal">Computer Science undergraduate at <span class="hl">Thapar Institute of Engineering &amp; Technology</span>, spending most of my time on research.</p>
+    <ul class="roles">
+      <li class="reveal"><span class="pulse-dot"></span><div><strong>Research Intern (GenAI)</strong><span>Samsung R&amp;D Institute, India</span></div></li>
+      <li class="reveal"><span class="pulse-dot"></span><div><strong>Research Intern</strong><span>Thapar Institute of Engineering &amp; Technology</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block wrap" id="research">
+  <h2 class="head"><span class="num">02</span><em>Research</em><span class="rule"><i></i></span></h2>
+  <picture class="fig reveal">
+    <source media="(prefers-color-scheme: light)" srcset="assets/fig/threads-light.svg">
+    <img src="assets/fig/threads-dark.svg" alt="Three research threads: CardioVision, shown as a blinking eye over a heartbeat; NLP and LLM evaluation, shown as a sentence being tagged; inverse reinforcement learning, shown as an agent walking a grid.">
+  </picture>
+  <div class="threads">
+    <article class="reveal"><h3>CardioVision</h3><p>Research Intern at Thapar Institute.</p></article>
+    <article class="reveal"><h3>NLP and LLM evaluation</h3><p>Biomedical named entity recognition and how it holds up as entities drift over time, across encoder and generative model families. In legal NLP, statistically tested comparisons of fine-tuned encoders against zero- and few-shot open-weight LLMs.</p></article>
+    <article class="reveal"><h3>Inverse reinforcement learning</h3><p>Recovering the reward functions that explain an agent's observed behaviour, so that learned policies become interpretable.</p></article>
+  </div>
+  <picture class="fig reveal">
+    <source media="(prefers-color-scheme: light)" srcset="assets/fig/interests-light.svg">
+    <img src="assets/fig/interests-dark.svg" alt="Research interests: retinal fundus imaging, ECG and physiological signals, interpretability (SHAP, sparse autoencoders), biomedical and legal NLP, LLM evaluation and temporal robustness, LLM agents and inverse reinforcement learning.">
+  </picture>
+</section>
+
+<section class="block wrap" id="projects">
+  <h2 class="head"><span class="num">03</span><em>Projects</em><span class="rule"><i></i></span></h2>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section class="block wrap" id="skills">
+  <h2 class="head"><span class="num">04</span><em>Skills</em><span class="rule"><i></i></span></h2>
+  <div class="skills" id="skillrows"></div>
+</section>
+
+<section class="block wrap contact" id="contact">
+  <h2 class="head"><span class="num">05</span><em>Contact</em><span class="rule"><i></i></span></h2>
+  <p class="big reveal">The easiest way to reach me is LinkedIn.</p>
+  <div class="links reveal">
+    <a href="https://www.linkedin.com/in/iakshatkaushik" rel="noopener"><span>LinkedIn</span><i>↗</i></a>
+    <a href="https://orcid.org/0009-0009-9848-3883" rel="noopener"><span>ORCID</span><i>↗</i></a>
+    <a href="https://github.com/iakshatkaushik" rel="noopener"><span>GitHub</span><i>↗</i></a>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  <span>Akshat</span>
+  <span>Fundus photograph by Mikael Häggström, CC0. Icons from Devicon and Simple Icons.</span>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
